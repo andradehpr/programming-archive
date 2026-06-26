@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz HCT — História das Ciências e Tecnologias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Quiz HCT</h1>
+            <p class="subtitle">História das Ciências e Tecnologias — 80 perguntas</p>
+            <p class="score-live" id="score-live">Acertos: 0</p>
+            <div class="progress-bar" id="progress-bar" aria-hidden="true">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <p class="progress-text" id="progress-text">Pergunta 0 de 0</p>
+        </header>
+
+        <main id="quiz-container" class="quiz-container" role="main">
+            <!-- Pergunta atual gerada dinamicamente -->
+        </main>
+
+        <div class="actions">
+            <button type="button" id="btn-next" class="btn btn-primary hidden">
+                Seguinte
+            </button>
+            <button type="button" id="btn-restart" class="btn btn-secondary">
+                Recomeçar
+            </button>
+        </div>
+
+        <section id="results" class="results hidden" aria-live="polite">
+            <h2>Resultados</h2>
+            <p class="score-message" id="score-message"></p>
+            <p class="emoji-result" id="emoji-result"></p>
+            <div class="summary" id="summary"></div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

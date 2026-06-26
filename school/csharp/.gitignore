@@ -1,0 +1,16 @@
+# C# / .NET Ignore
+[Oo]bj/
+[Bb]in/
+.vs/
+*.user
+*.suo
+*.dbmdl
+*.jfm
+*.pvc
+*.pidb
+*.log
+*.exe
+*.dll
+
+# macOS
+.DS_Store

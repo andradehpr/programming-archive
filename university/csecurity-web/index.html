@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSecurity</title>
+    <link rel="icon" type="image/svg+xml" href="imagens/shield-check.svg">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Documentos css externos -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!-- Fundo animado VANTA -->
+    <div id="vanta-bg"></div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><i class="bi bi-shield-check"></i> CSecurity</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="conceitos.html">Conceitos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="playground.html">Playground</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ferramenta.html">Ferramentas Interativas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="noticias.html">Notícias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="hero-section py-5 text-center" style="background-color: transparent; color: #fff;">
+        <div class="container">
+            <h1 class="hero-title mt-2 mb-4">A Tua Primeira Linha de Defesa</h1>
+            <p class="lead mb-4 w-75 mx-auto">Num mundo conectado, a ignorância é a maior vulnerabilidade.
+                Aprende a proteger os teus dados hoje.</p>
+        </div>
+    </header>
+
+    <hr class="headerLine mx-auto">
+
+    <!-- Conceitos -->
+    <section id="conceitos" class="conceitos container">
+        <h2 class="section-title">Alguns conceitos </h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <a href="conceitos.html#basicos">
+                    <div class="custom-card text-center">
+                        <div class="icon-box"><i class="bi bi-phone text-primary"></i></div>
+                        <h4>2FA</h4>
+                        <p class="text-secondary">Camada extra de segurança além da senha.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="conceitos.html#ameacas">
+                    <div class="custom-card text-center">
+                        <div class="icon-box"><i class="bi bi-bug-fill text-danger"></i></div>
+                        <h4>Malware</h4>
+                        <p class="text-secondary">Software malicioso instalado sem o teu consentimento para danificar o
+                            sistema.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-4">
+                <a href="conceitos.html#rede">
+                    <div class="custom-card text-center">
+                        <div class="icon-box"><i class="bi bi-shield-shaded text-warning"></i></div>
+                        <h4>VPN</h4>
+                        <p class="text-secondary">Navegação com privacidade, escondendo a tua localização e identidade
+                            real.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Noticias -->
+    <h2 class="section-title mb-5">Notícias!</h2>
+    <section id="dicas" class="section-video-bg">
+        <div class="container position-relative containerBorder">
+            <!-- Vídeo de fundo -->
+            <video autoplay muted loop playsinline class="bg-video">
+                <source src="imagens/videoNoticias.mov" type="video/quicktime">
+            </video>
+
+            <!-- SlideShow Noticias -->
+            <div class="container position-relative">
+                <div id="carouselNoticias" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="0" class="active"
+                            aria-current="true"></button>
+                        <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="2"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <div class="row align-items-center g-0"> 
+                                
+                                <div class="col-12 col-md-6 imagemNoticias order-2 order-md-1 p-0">
+                                    <img src="imagens/vodafone.jpeg" class="img-fluid w-100 h-100 object-fit-cover" alt="Backups">
+                                </div>
+                                <div class="col-12 col-md-6 ps-md-5 mt-4 mt-md-0 order-1 order-md-2">
+                                    <h3 class="mb-4 text-white">Ataque à Vodafone </h3>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-3">
+                                            <h5 class="text-light">A operadora de telecomunicações liderada por Mário
+                                                Vaz foi alvo de um ciberataque sem precedentes na noite de
+                                                segunda-feira, o qual afetou a sua rede e os seus quatro milhões de
+                                                clientes.</h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <div class="row align-items-center">
+                                <div class="col-12 col-md-6 imagemNoticias order-2 order-md-1">
+                                    <img src="imagens/noticia1.jpg"
+                                        class="img-fluid rounded shadow-lg border border-secondary w-100"
+                                        alt="Segurança">
+                                </div>
+                                <div class="col-12 col-md-6 ps-md-5 mt-4 mt-md-0 order-1 order-md-2">
+                                    <h3 class="mb-4 text-light">Portugal reforça lei de cibersegurança e torna prevenção
+                                        obrigatória</h3>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-3">
+                                            <h5 class="text-light">Portugal aprovou um novo enquadramento legal de
+                                                cibersegurança, alinhado com a Diretiva Europeia NIS2, que reforça a
+                                                proteção de sistemas digitais e torna obrigatória a adoção de medidas de
+                                                prevenção e gestão de risco.</h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="10000">
+                            <div class="row align-items-center">
+                                <div class="col-12 col-md-6 imagemNoticias order-2 order-md-1">
+                                    <img src="imagens/festival.jpeg"
+                                        class="img-fluid rounded shadow-lg border border-secondary w-100" alt="Updates">
+                                </div>
+                                <div class="col-12 col-md-6 ps-md-5 mt-4 mt-md-0 order-1 order-md-2">
+                                    <h3 class="mb-4 text-white">Época festiva obriga ao reforço da cibersegurança</h3>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-3">
+                                            <h5 class="text-light">Durante a época que antecede o natal é usual as
+                                                campanhas de descontos e grandes promoções, tanto no mundo real como no
+                                                digital. Mas é também neste período que muitas pessoas estão vulneráveis
+                                                a burlas informáticas</h5>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                            <button class="carousel-control-prev align-items-end mb-4" type="button" data-bs-target="#carouselNoticias" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+
+                            <button class="carousel-control-next align-items-end mb-4" type="button" data-bs-target="#carouselNoticias" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--QUIZ -->
+    <section class="quiz-section container">
+        <h2 class="section-title mb-5">Quiz</h2>
+        <div class="quiz-advertisement mx-auto containerBorder">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 order-2 order-md-1">
+                    <img src="imagens/quizAdd.jpg" alt="Promoção Quiz" class="img-fluid rounded shadow-lg w-100">
+                </div>
+                <div class="col-12 col-md-6 mt-4 mt-md-0 text-center text-md-start order-1 order-md-2">
+                    <h3 class="text-light mb-3">Testa os teus conhecimentos em Cibersegurança!</h3>
+                    <p class="text-secondary mb-4">
+                        Escolhe entre 4 temas diferentes e responde a 15 perguntas.
+                        Descobre o quão preparado estás contra ameaças digitais!
+                    </p>
+                    <a href="quiz.html#quiz-sec" class="btn btn-quiz-advert">Iniciar Quiz 🧠</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Noticias -->
+    <script> const video = document.querySelector('.bg-video'); video.playbackRate = 0.5;</script>
+
+    <!--  Javascript Geral   -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/quiz.js"></script>
+
+    <!-- Javascript Background -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+    <script SRC="js/background.js"></script>
+
+</body>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-container">
+
+        <!-- CSecurity -->
+        <div class="footer-left">
+            <a class="navbar-brand" href="index.html">CSecurity</a>
+            <p>Protege os teus dados, fortalece a tua defesa digital e mantém-te informado sobre ciberameaças.</p>
+        </div>
+
+        <!-- Links rápidos -->
+        <div class="footer-right">
+            <h4>Links Rápidos</h4>
+            <p><a href="index.html">Início</a></p>
+            <p><a href="conceitos.html">Conceitos</a></p>
+            <p><a href="playground.html">Playground</a></p>
+            <p><a href="ferramenta.html">Ferramentas</a></p>
+            <p><a href="noticias.html">Notícias</a></p>
+            <p><a href="quiz.html">Quiz</a></p>
+        </div>
+
+        <!-- Alunos -->
+        <div class="footer-students">
+            <h4>Project</h4>
+            <p>Information Technologies — group coursework</p>
+        </div>
+
+        <!-- Escola -->
+        <div class="footer-school">
+            <h4>Escola</h4>
+            <p><a href="https://www.istec.pt/" target="_blank">Instituto Superior de Tecnologias Avançadas de Lisboa</a>
+            </p>
+            <p><a href="https://www.istec.pt/index.php/licenciatura-em-informatica/" target="_blank">Licenciatura:
+                    Engenharia Informática</a></p>
+            <p>Dez 2025 / Jan 2026</p>
+        </div>
+
+    </div>
+
+    <!-- Bottom Footer-->
+    <div class="footer-bottom">
+        &copy; 2026 CSecurity • Desenvolvido para a aula de TI • HTML • CSS • Bootstrap • JS
+    </div>
+</footer>
+
+</html>

@@ -1,0 +1,6 @@
+São apenas três arquivos:
+
+conio.c     -> deve ser inserido na pasta C:\Program Files (x86)\CodeBlocks\MinGW\include
+conio.h     -> deve ser inserido na pasta C:\Program Files (x86)\CodeBlocks\MinGW\include
+libconio.a  -> deve ser inserido na pasta C:\Program Files (x86)\CodeBlocks\MinGW\lib
+

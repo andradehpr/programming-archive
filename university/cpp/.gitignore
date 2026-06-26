@@ -1,0 +1,15 @@
+# C++ Build Artifacts
+*.o
+*.out
+*.exe
+*.a
+*.so
+*.dylib
+bin/
+obj/
+build/
+.vs/
+*.user
+
+# macOS
+.DS_Store

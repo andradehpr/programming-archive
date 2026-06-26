@@ -1,0 +1,272 @@
+/* Estilo para os botões de navegação do carrossel */
+.carousel-nav-cards {
+    position: static;
+    /* Faz com que saiam de cima da imagem */
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    /* Espaço entre os botões */
+    justify-content: center;
+}
+
+.carousel-nav-cards button {
+    flex: 1;
+    /* Faz com que todos tenham o mesmo tamanho */
+    width: auto !important;
+    /* Sobrescreve o padrão do bootstrap */
+    height: auto !important;
+    text-indent: 0 !important;
+    /* Permite mostrar texto */
+    opacity: 0.6;
+    background-color: #1e1e1e;
+    /* Cor escura do fundo */
+    border: 1px solid #444;
+    padding: 15px;
+    border-radius: 8px;
+    color: white;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+/* Quando o botão está ativo */
+.carousel-nav-cards button.active {
+    opacity: 1;
+    background-color: var(--primary-neon);
+    /* Verde Neon */
+    color: black;
+    /* Texto preto para contraste */
+    font-weight: bold;
+    transform: translateY(-3px);
+    /* Efeito 3D */
+    box-shadow: 0 5px 15px rgba(0, 255, 136, 0.2);
+}
+
+/* Setas mais para as extremidades do ecrã */
+#carouselNoticias .carousel-control-prev {
+    left: 10px;
+    z-index: 10;
+    /* empurra para a esquerda */
+}
+
+#carouselNoticias .carousel-control-next {
+    right: 10px;
+    z-index: 10;
+    /* empurra para a direita */
+}
+
+/* Garante que continuam centradas verticalmente */
+#carouselNoticias .carousel-control-prev,
+#carouselNoticias .carousel-control-next {
+    width: auto;
+}
+
+/* Indicadores mais para baixo */
+#carouselNoticias .carousel-indicators {
+    bottom: 5px;/* empurra para baixo */
+}
+
+/* Section com video de fundo */
+.section-video-bg {
+    position: relative;
+    z-index: 3;
+    width: 80%;
+    margin: auto;
+}
+
+/* Vídeo */
+.section-video-bg .bg-video {
+    position: absolute;
+    left: 50%;
+    min-height: 100%;
+    width: 100%;
+    height: auto;
+    transform: translate(-50%);
+    object-fit: cover;
+    z-index: 1;
+}
+
+/* Overlay para escurecer o vídeo */
+.section-video-bg .video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 2;
+}
+
+/* Conteúdo à frente do vídeo */
+.section-video-bg .container {
+    position: relative;
+    z-index: 3;
+}
+
+.section-video-bg .bg-video {
+    filter: brightness(0.5) contrast(1.1);
+}
+
+.imagemNoticias{
+    margin: 50px 0 50px 0;
+}
+
+.containerBorder {
+    border: 1px solid rgba(0, 255, 136, 0.4);
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0, 255, 136, 0.15);
+    overflow: hidden;
+}
+
+/* Para remover o sublinhado dos conceitos do index */
+#conceitos a {
+    text-decoration: none;
+    color: inherit; /* Mantém a cor original do texto */
+}
+
+/* Anuncio Quiz Styke */
+.quiz-advertisement {
+    background-color: #05060B;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    width: 90%;
+    margin-bottom: 5%;
+}
+
+.quiz-advertisement h3 {
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.quiz-advertisement p {
+    color: #cccccc;
+    font-size: 1rem;
+}
+
+.btn-quiz-advert {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+}
+
+.btn-quiz-advert:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+/* Design responsivo para pagina Index */
+@media (max-width: 768px) {
+    .carousel-nav-cards {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .carousel-nav-cards button {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    /* Video section */
+    .section-video-bg {
+        padding: 2rem 0;
+    }
+
+    .bg-video {
+        height: 50vh;
+    }
+
+    /* Conteudo Carousel Noticias */
+    .carousel-item .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .carousel-item .col-md-6 {
+        margin-bottom: 2rem;
+    }
+
+    .carousel-item .col-md-6:last-child {
+        margin-bottom: 0;
+    }
+
+    .imagemNoticias {
+        margin: 0 0 2rem 0;
+    }
+
+    .carousel-item h3 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .carousel-item h5 {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    #carouselNoticias .carousel-control-prev,
+    #carouselNoticias .carousel-control-next {
+        display: none;
+    }
+
+    #dicas h3 {
+        font-size: 1.5rem;
+    }
+
+    #dicas h5 {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 1200px) {
+    #carouselNoticias h3 {
+            font-size: 1.4rem;
+        }
+
+    #carouselNoticias h5 {
+            font-size: 0.95rem;
+            line-height: 1.4;
+    }
+}
+
+@media (max-width: 576px) {
+    .carousel-nav-cards button {
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+
+    .bg-video {
+        height: 40vh;
+    }
+
+    .carousel-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .carousel-item h5 {
+        font-size: 0.95rem;
+    }
+
+    .containerBorder {
+        padding: 1rem;
+    }
+
+    /* Anuncio Quiz */
+    .quiz-advertisement {
+        padding: 2rem 1rem;
+    }
+
+    .quiz-advertisement h3 {
+        font-size: 1.3rem;
+    }
+
+    .quiz-advertisement p {
+        font-size: 0.95rem;
+    }
+}

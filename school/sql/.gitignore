@@ -1,0 +1,11 @@
+# Database binaries
+*.mdf
+*.ldf
+*.ndf
+*.db
+*.sqlite
+*.sqlite3
+*.db3
+
+# macOS
+.DS_Store

@@ -1,0 +1,84 @@
+# Build output
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Ll]og/
+[Ll]ogs/
+*.o
+*.obj
+*.exe
+*.dll
+*.pdb
+*.cache
+*.depend
+*.layout
+*.ilk
+*.meta
+*.iobj
+*.ipdb
+
+# .NET / C#
+packages/
+*.sln
+*.slnx
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.dbmdl
+*.jfm
+*.pidb
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.nupkg
+
+# IDE / editors
+.vs/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+.AppleDouble
+.LSOverride
+Icon
+
+# NuGet restore (do not commit vendored packages)
+**/packages/
+
+# Python / Django
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+db.sqlite3
+media/
+*.sqlite3
+
+# PDFs and reports
+*.pdf
+*.PDF
+
+# Binary libraries (keep source headers)
+*.a
+
+# Office
+*.docx
+*.xlsx
