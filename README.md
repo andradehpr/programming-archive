@@ -48,4 +48,4 @@ open university/web/quiz-hct/index.html
 
 ## License
 
-See [LICENSE](LICENSE). Contact before commercial reuse.
+See [LICENSE](LICENSE).
