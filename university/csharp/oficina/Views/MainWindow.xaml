@@ -1,0 +1,70 @@
+﻿<Window x:Class="Oficina.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Oficina — Gestão"
+        Icon="pack://application:,,,/app.ico"
+        Height="680"
+        Width="960"
+        MinHeight="600"
+        MinWidth="860"
+        Background="{StaticResource BrushFundo}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="56"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" Background="{StaticResource BrushPrimaria}">
+            <Grid Margin="20,0">
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Cursor="Hand"
+                            MouseLeftButtonUp="btnInicio_Click">
+                    <Image Source="pack://application:,,,/app.ico"
+                           Width="34"
+                           Height="34"
+                           Stretch="Uniform"
+                           Margin="0,0,10,0"/>
+                    <StackPanel VerticalAlignment="Center">
+                        <TextBlock Text="Oficina"
+                                   Foreground="White"
+                                   FontSize="16"
+                                   FontWeight="Bold"/>
+                        <TextBlock Text="Gestão de clientes e folhas de obra"
+                                   Foreground="#CCCCCC"
+                                   FontSize="10"/>
+                    </StackPanel>
+                </StackPanel>
+
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Center"
+                            VerticalAlignment="Center">
+                    <Button x:Name="btnNavInicio"
+                            Content="Início"
+                            Style="{StaticResource NavButton}"
+                            Click="btnInicio_Click"/>
+                    <Button x:Name="btnNavClientes"
+                            Content="Clientes"
+                            Style="{StaticResource NavButton}"
+                            Click="btnClientes_Click"/>
+                    <Button x:Name="btnNavFolhas"
+                            Content="Folhas de Obra"
+                            Style="{StaticResource NavButton}"
+                            Click="btnFolhasObra_Click"/>
+                </StackPanel>
+
+                <Button Content="Sair"
+                        Style="{StaticResource NavButtonAccent}"
+                        Click="btnSair_Click"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"/>
+            </Grid>
+        </Border>
+        <Frame x:Name="framePrincipal"
+               Grid.Row="1"
+               NavigationUIVisibility="Hidden"
+               Background="{StaticResource BrushFundo}"/>
+    </Grid>
+</Window>

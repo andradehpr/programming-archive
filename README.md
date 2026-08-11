@@ -16,6 +16,7 @@ School and university programming projects in a single repository.
 | Minesweeper | 2026 | [university/cpp/minesweeper/](university/cpp/minesweeper/) | C++ | Console minesweeper |
 | WPF Toolkit | 2026 | [university/csharp/wpf-toolkit/](university/csharp/wpf-toolkit/) | C#, WPF | BMI calculator, dice game, MVVM |
 | LINQ School | 2026 | [university/csharp/linq-school/](university/csharp/linq-school/) | C#, LINQ | School data queries |
+| Oficina | 2026 | [university/csharp/oficina/](university/csharp/oficina/) | C#, WPF, EF, SQL | Workshop clients and work orders |
 
 ## Structure
 
@@ -33,7 +34,8 @@ programming-archive/
     ├── cpp/minesweeper/
     └── csharp/
         ├── wpf-toolkit/
-        └── linq-school/
+        ├── linq-school/
+        └── oficina/
 ```
 
 ## Setup
